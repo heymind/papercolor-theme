@@ -1190,7 +1190,7 @@ fun! s:apply_syntax_highlightings()
   end
 
   exec 'hi TabLine' . s:fg_tabline_inactive_fg . s:bg_tabline_inactive_bg . s:ft_none
-  exec 'hi TabLineFill' . s:fg_tabline_fg . s:bg_tabline_bg . s:ft_none
+  exec 'hi TabLineFill' . s:fg_tabline_inactive_fg . s:bg_tabline_inactive_bg  . s:ft_none
   exec 'hi TabLineSel' . s:fg_tabline_active_fg . s:bg_tabline_active_bg . s:ft_none
 
   exec 'hi BufTabLineCurrent' . s:fg_buftabline_current_fg . s:bg_buftabline_current_bg . s:ft_none
